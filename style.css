@@ -5,6 +5,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, yellow, red);
+    background-repeat: no-repeat;
 }
 
 *, *::after, *::before {
@@ -22,6 +23,7 @@ body {
     background-color: #ebebeb;
     margin: 10rem auto;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .block {
@@ -42,4 +44,18 @@ body {
     font-size: 2rem;
     text-transform: capitalize;
     color: #00b3ff;
+}
+
+@media(max-width: 601px) {
+    .weather-card {
+        width: 20rem;
+    }
+
+    #location {
+        font-size: 2rem;
+    }
+
+    #temperature {
+        font-size: 2rem;
+    }
 }
