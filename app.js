@@ -11,7 +11,7 @@ const successCallback = (position) => {
     let lat = coords.latitude;
     let lon = coords.longitude;
     
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=58dfe150527141cdd127908ff00d2e31&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=58dfe150527141cdd127908ff00d2e31&units=metric`)
         .then(function (resp) { return resp.json() })
         .then(function (data) {
             console.log(data);
